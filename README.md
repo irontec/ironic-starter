@@ -87,7 +87,7 @@ function testRouterHelper() {
 
 ## Folder Structure
 
-```bash
+```
 .
 |____css
 |____img
