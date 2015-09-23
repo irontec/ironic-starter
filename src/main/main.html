@@ -1,0 +1,14 @@
+<ion-view>
+    <div class="bar bar-header bar-positive">
+      <div class="h1 title">
+        {{vm.title}}
+      </div>
+    </div>
+    <ion-content class="has-header padding">
+      <button ng-click="vm.testLogger()" class="button button-full button-calm">Test Logger</button>
+      <button ng-click="vm.testLoggerDebug()" class="button button-full button-calm">Test Logger Debug</button>
+      <button ng-click="vm.testModal()" class="button button-full button-calm">Test Modal</button>
+      <button ng-click="vm.testException()" class="button button-full button-calm">Test Exception</button>
+      <button ng-click="vm.testRouterHelper()" class="button button-full button-calm">Test Router Helper</button>
+    </ion-content>
+</ion-view>
