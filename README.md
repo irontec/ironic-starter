@@ -4,6 +4,8 @@ This starter was developed to start new projects with some built-in useful utili
 
 Also, it is a good starting point to follow some good practices. It is structured to develop scalable and maintainable [Ionic Framework](http://ionicframework.com/) apps; its structure is modularized into very specific functions.
 
+[![ironic-starter features](https://cloud.githubusercontent.com/assets/1042187/10096426/ad02ff4e-6371-11e5-9789-21e2e0ff49c5.png)](https://cloud.githubusercontent.com/assets/1042187/10096426/ad02ff4e-6371-11e5-9789-21e2e0ff49c5.png)
+
 ## How to use it
 
 To install [Ionic Framework](http://ionicframework.com/) and start a project using this starter:
