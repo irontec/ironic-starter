@@ -17,7 +17,7 @@ $ ionic serve
 
 ## Style Guide
 
-This starter has been developed following this [Style Guide](https://github.com/johnpapa/angular-styleguide) from [@Todd Motto](https://twitter.com/toddmotto) and [@John Papa](https://twitter.com/john_papa).
+This starter has been developed following the style guides from [Todd Motto](https://github.com/toddmotto/angularjs-styleguide) and [John Papa](https://github.com/johnpapa/angular-styleguide).
 
 ## Utilities included
 
@@ -150,6 +150,6 @@ The *app.js* file is only used to create the main module and specify the depende
 
 That *config.js* file contains the minimum route configuration, sets the logger's configuration and inits the main components.
 
-#### layout
+#### Layout folder
 
 This folder contains the view used to display the tabs.
