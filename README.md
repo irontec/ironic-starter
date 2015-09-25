@@ -1,5 +1,9 @@
 # Ironic-Starter
 
+This starter was developed to start new projects with some built-in useful utilities. Most of them are to handle errors and exceptions and display them visually. Thanks to them it is easier to see what's going on in the application.
+
+Also, it is a good starting point to follow some good practices. It is structured to develop scalable and maintainable [Ionic Framework](http://ionicframework.com/) apps; its structure is modularized into very specific functions.
+
 ## How to use it
 
 To install [Ionic Framework](http://ionicframework.com/) and start a project using this starter:
@@ -7,6 +11,8 @@ To install [Ionic Framework](http://ionicframework.com/) and start a project usi
 ```bash
 $ npm install -g ionic cordova
 $ ionic start myApp https://github.com/MikelEiza/ironic-starter
+$ cd myApp
+$ ionic serve
 ```
 
 ## Style Guide
@@ -15,7 +21,7 @@ This starter has been developed following this [Style Guide](https://github.com/
 
 ## Utilities included
 
-This starter project contains some useful utilities to use right out the box.
+This starter project contains some useful utilities to use right out the box. Some of them are based on [John Papa](http://johnpapa.net/) and [Yi Chen Zhu](https://github.com/yichenzhu1337) code.
 
 ### Exception handler
 

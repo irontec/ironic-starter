@@ -1,19 +1,19 @@
 (function() {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('app.contact')
-        .controller('Contact', Contact);
+  angular
+  .module('app.contact')
+  .controller('Contact', Contact);
 
-    /* @ngInject */
-    function Contact() {
-        /*jshint validthis: true */
-        var vm = this;
-        // Variables
-        vm.title = 'Contact';
+  /* @ngInject */
+  function Contact() {
+    var vm = this;
+    // Variables
+    vm.title = 'Contact';
 
-        // Methods
+    // Methods
 
-        //////////////////////////////
-    }
+    //////////////////////////////
+    
+  }
 })();
