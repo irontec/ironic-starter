@@ -12,7 +12,7 @@ To install [Ionic Framework](http://ionicframework.com/) and start a project usi
 
 ```bash
 $ npm install -g ionic cordova
-$ ionic start myApp https://github.com/ironic/ironic-starter
+$ ionic start myApp https://github.com/irontec/ironic-starter
 $ cd myApp
 $ ionic serve
 ```
