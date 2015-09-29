@@ -20,7 +20,7 @@
       modalScope = $rootScope.$new(),
       thisScopeId = modalScope.$id;
 
-      modalScope.org_id = parameters;
+      modalScope.parameters = parameters;
 
       $ionicModal.fromTemplateUrl(templateUrl, {
         scope: modalScope,
