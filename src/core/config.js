@@ -4,18 +4,17 @@
   angular.module('app')
   .config(routesConfig)
   .config(loggerConfig)
-  .directive('iframeOnload',iframeOnload)
   .run(initCoreComponents);
 
   function routesConfig($stateProvider, $urlRouterProvider) {
 
-    $stateProvider.state('menu', {
-      url: "/menu",
+    $stateProvider.state('tab', {
+      url: "/tab",
       abstract: true,
-      templateUrl: "src/layout/menu.html",
+      templateUrl: "src/layout/tabs.html",
     })
 
-    $urlRouterProvider.otherwise("/menu/main");
+    $urlRouterProvider.otherwise("/tab/main");
   }
 
   function loggerConfig(loggerProvider) {
@@ -27,29 +26,14 @@
     $ionicPlatform.ready(function() {
 
       if(window.cordova && window.cordova.plugins.Keyboard) {
-        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
-        cordova.plugins.Keyboard.disableScroll(true);
+        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       }
-      
+
       if(window.StatusBar) {
-//        StatusBar.styleDefault();
-//        StatusBar.styleLightContent();
-    	  $cordovaStatusbar.styleHex('#009b97');
+        StatusBar.styleDefault();
       }
+
     });
-  }
-  
-  function iframeOnload() {
-      return {
-            scope: {
-                callBack: '&iframeOnload'
-        },
-        link: function(scope, element, attrs){
-            element.on('load', function(){
-                return scope.callBack();
-            })
-        }
-      }
   }
 
 })();

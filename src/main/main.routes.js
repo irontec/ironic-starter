@@ -5,11 +5,10 @@
     .module('app.main')
     .config(function ($stateProvider) {
 
-      $stateProvider.state('menu.main', {
+      $stateProvider.state('tab.main', {
         url: '/main',
-        cache: false,
         views: {
-          'menuContent': {
+          'tab-main': {
             templateUrl: 'src/main/main.html',
             controller: 'Main as vm'
           }
