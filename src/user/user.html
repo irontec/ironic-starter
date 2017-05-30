@@ -1,11 +1,10 @@
 <ion-view view-title="{{vm.title}}">
     <ion-content overflow-scroll="true">
       <iframe 
-        id="iframeTransfer"
         iframe-onload="vm.iframeLoadedCallBack()" 
-        ng-src="{{vm.iframeUrl}}" 
-        frameborder="0" 
-        class="completeDisplay"
-      ></iframe>
+        ng-src="{{vm.iframeUrl}}"
+        class="completeDisplay" 
+        frameborder="0"
+       ></iframe>
     </ion-content>
 </ion-view>

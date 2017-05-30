@@ -6,42 +6,19 @@
   .controller('Main', Main);
 
   /* @ngInject */
-  function Main(logger, modal, $state) {
+  function Main(logger, modal, $state, $ionicLoading, $sce, ApiEndpoint) {
     var vm = this;
     // Variables
-    vm.title = 'Main';
+    vm.title = 'Transferencia de vehículo online';
+    vm.iframeUrl = $sce.trustAsResourceUrl(ApiEndpoint.url + '/?product=transferencia-de-vehiculo-online&tokenMobile=fBIRmZWq3jscvPSrCI7ZIMBGojxpVe&codeRandom='+ (new Date()).getTime());
 
-    // Methods
-    vm.testLogger = testLogger;
-    vm.testLoggerDebug = testLoggerDebug;
-    vm.testModal = testModal;
-    vm.testException = testException;
-    vm.testRouterHelper = testRouterHelper;
-    //////////////////////////////
-
-    function testLogger() {
-      logger.info('This is a test', null, 'Test title');
-    }
-
-    function testLoggerDebug() {
-      logger.debug('This is a debug test message', null, 'Test Debug');
-    }
-
-    function testModal() {
-      modal.show('src/modal/modalTest.html', 'Modal as vm')
-      .then(function(result) {
-        // result
-      }, function(err) {
-        // error
-      });
-    }
-
-    function testException() {
-      throw { message: 'Exception test error' };
-    }
-
-    function testRouterHelper() {
-      $state.go('fake-state')
+    $ionicLoading.show({
+        template: 'Cargando...'
+    });
+    
+    vm.iframeLoadedCallBack = function(){
+        // do stuff
+        $ionicLoading.hide();
     }
   }
 })();
